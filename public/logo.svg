@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="badgeDark" cx="50%" cy="50%" r="50%" fx="40%" fy="30%">
+      <stop offset="0%" stop-color="#1c1c1c" />
+      <stop offset="65%" stop-color="#0f0f0f" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD54F" />
+      <stop offset="80%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </radialGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="100%" stop-color="#C62828" />
+    </linearGradient>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.8" />
+    </filter>
+
+    <!-- Top arc: radius 190, center (250, 250) -->
+    <path id="topTextArc" d="M 60,250 A 190,190 0 0,1 440,250" fill="none" />
+    <!-- Bottom arc: radius 180, center (250, 250), sweeping left to right -->
+    <path id="bottomTextArc" d="M 70,250 A 180,180 0 0,0 430,250" fill="none" />
+  </defs>
+
+  <circle cx="250" cy="250" r="235" fill="none" stroke="#222" stroke-width="2" />
+  <circle cx="250" cy="250" r="228" fill="url(#badgeDark)" stroke="#FFB300" stroke-width="4" filter="url(#shadowFilter)" />
+  <circle cx="250" cy="250" r="218" fill="none" stroke="rgba(255, 179, 0, 0.4)" stroke-width="2" stroke-dasharray="6,4" />
+  <circle cx="250" cy="250" r="156" fill="#141414" stroke="url(#redAccent)" stroke-width="3.5" />
+
+  <text font-family="'Plus Jakarta Sans', Impact, sans-serif" font-weight="900" font-size="34" fill="#FFF8F0" letter-spacing="9" text-anchor="middle">
+    <textPath href="#topTextArc" startOffset="50%">
+      S.G FOOD POINT
+    </textPath>
+  </text>
+
+  <g fill="#FFB300" transform="translate(42, 238) scale(0.9)">
+    <polygon points="12,0 15,9 24,9 17,15 19,24 12,18 5,24 7,15 0,9 9,9" />
+  </g>
+  <g fill="#FFB300" transform="translate(436, 238) scale(0.9)">
+    <polygon points="12,0 15,9 24,9 17,15 19,24 12,18 5,24 7,15 0,9 9,9" />
+  </g>
+
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#FFB300" letter-spacing="7" text-anchor="middle">
+    <textPath href="#bottomTextArc" startOffset="50%">
+      ★ FRESH &amp; DELICIOUS ★
+    </textPath>
+  </text>
+
+  <g transform="translate(150, 160)">
+    <path d="M 60,8 Q 65,-8 60,-20" stroke="#FF5252" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85" />
+    <path d="M 100,5 Q 107,-12 100,-25" stroke="#FFB300" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.9" />
+    <path d="M 140,8 Q 145,-8 140,-20" stroke="#FF5252" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.85" />
+
+    <path d="M 25,65 Q 25,20 100,20 Q 175,20 175,65 Z" fill="#FFA726" stroke="#E65100" stroke-width="3" />
+    <ellipse cx="65" cy="40" rx="3.5" ry="2" fill="#FFF8F0" transform="rotate(-15 65 40)" />
+    <ellipse cx="100" cy="33" rx="3.5" ry="2" fill="#FFF8F0" />
+    <ellipse cx="135" cy="42" rx="3.5" ry="2" fill="#FFF8F0" transform="rotate(18 135 42)" />
+    <ellipse cx="80" cy="52" rx="3" ry="1.8" fill="#FFF8F0" transform="rotate(10 80 52)" />
+    <ellipse cx="120" cy="52" rx="3" ry="1.8" fill="#FFF8F0" transform="rotate(-10 120 52)" />
+
+    <path d="M 25,68 L 175,68 L 165,78 L 145,74 L 130,86 L 115,74 L 95,84 L 80,74 L 60,85 L 45,74 L 25,76 Z" fill="#FFCA28" />
+
+    <rect x="22" y="78" width="156" height="24" rx="10" fill="#8D4925" stroke="#5D280E" stroke-width="2.5" />
+    <circle cx="50" cy="90" r="2.5" fill="#B26A3B" />
+    <circle cx="90" cy="88" r="2.5" fill="#B26A3B" />
+    <circle cx="130" cy="91" r="2" fill="#B26A3B" />
+    <circle cx="155" cy="87" r="2" fill="#B26A3B" />
+
+    <path d="M 18,103 Q 32,96 46,105 Q 60,114 74,103 Q 88,96 102,105 Q 116,114 130,103 Q 144,96 158,105 Q 172,114 182,103 L 180,112 L 20,112 Z" fill="#4CAF50" stroke="#2E7D32" stroke-width="1.5" />
+
+    <path d="M 30,114 L 170,114 Q 170,140 100,140 Q 30,140 30,114 Z" fill="#FFA726" stroke="#E65100" stroke-width="3" />
+
+    <g transform="translate(25, 148)">
+      <rect x="20" y="0" width="110" height="22" rx="6" fill="#E53935" />
+      <text x="75" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="11" fill="#FFF8F0" text-anchor="middle" letter-spacing="2">KASUR ORIGINAL</text>
+    </g>
+  </g>
+</svg>

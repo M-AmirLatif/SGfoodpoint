@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --color-bg-base: #0a0a0a;
+  --color-surface-card: #141414;
+  --color-red-primary: #e53935;
+  --color-amber-gold: #ffb300;
+  --color-green-fresh: #4caf50;
+  --color-text-cream: #fff8f0;
+}
+
+html {
+  background-color: #0a0a0a;
+  color: #fff8f0;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-body), 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #0a0a0a;
+  color: #fff8f0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Text Selection */
+::selection {
+  background-color: #e53935;
+  color: #fff8f0;
+}
+
+/* Hide scrollbars for horizontal snap containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile input touch prevention */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
