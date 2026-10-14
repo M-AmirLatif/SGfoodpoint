@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sgfoodpoint.pk"),
+  metadataBase: new URL("https://sgfoodpoint.vercel.app"),
   title: "S.G Food Point Kasur | Fresh & Delicious Fast Food (Open Till 2 AM)",
   description:
     "Order Kasur's top-rated crispy zinger burgers, stuffed chicken cheese shawarmas, lachha paratha rolls, loaded fries, and secret Kasuri sauces. FREE DELIVERY on orders over Rs. 500! Open late until 2:00 AM.",
@@ -32,17 +32,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_PK",
-    url: "https://sgfoodpoint.pk",
+    url: "https://sgfoodpoint.vercel.app",
     siteName: "S.G Food Point Kasur",
-    title: "S.G Food Point | Fresh & Delicious Fast Food in Kasur",
+    title: "S.G Food Point | Fresh & Delicious Fast Food (Open Till 2 AM)",
     description:
-      "Crispy zinger burgers, chicken cheese shawarma, hot wings, and peri peri fries. Free delivery on Rs. 500+ across Kasur. Open till 2:00 AM.",
+      "Crispy zinger burgers, chicken cheese shawarma, loaded fries & Kasuri sauces. Free delivery on Rs. 500+ across Kasur. Open late till 2:00 AM!",
     images: [
       {
-        url: "/images/logo.svg",
-        width: 800,
-        height: 800,
-        alt: "S.G Food Point Kasur Logo",
+        url: "/images/og-share.jpg",
+        width: 1200,
+        height: 630,
+        alt: "S.G Food Point - Crispy Zinger Burgers & Fast Food in Kasur",
+        type: "image/jpeg",
       },
     ],
   },
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "S.G Food Point Kasur | Fresh & Delicious",
     description: "Crispy zinger burgers, cheese shawarmas & free delivery on Rs. 500+.",
-    images: ["/images/logo.svg"],
+    images: ["/images/og-share.jpg"],
   },
   icons: {
     icon: "/logo.svg",
@@ -69,7 +70,7 @@ export default function RootLayout({
     "@type": "FastFoodRestaurant",
     "name": "S.G Food Point",
     "alternateName": ["Shah G Food Point", "Sha G Food Point"],
-    "image": "https://sgfoodpoint.pk/images/logo.svg",
+    "image": "https://sgfoodpoint.vercel.app/images/og-share.jpg",
     "priceRange": "Rs. 150 - Rs. 1500",
     "servesCuisine": ["Fast Food", "Burgers", "Pakistani Street Food", "Shawarma"],
     "address": {
@@ -102,7 +103,7 @@ export default function RootLayout({
         "closes": "02:00"
       }
     ],
-    "hasMenu": "https://sgfoodpoint.pk/#menu",
+    "hasMenu": "https://sgfoodpoint.vercel.app/#menu",
     "paymentAccepted": "Cash on Delivery",
     "currenciesAccepted": "PKR"
   };

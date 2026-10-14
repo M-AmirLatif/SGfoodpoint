@@ -27,3 +27,5 @@ Thumbs.db
 .agent/
 .vscode/
 .idea/
+
+.vercel
