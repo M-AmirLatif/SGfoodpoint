@@ -117,23 +117,26 @@ export const Hero: React.FC = () => {
               Kasur&apos;s most beloved crispy burgers, cheese-loaded shawarmas, buttery paratha rolls, and peri peri fries. Freshly grilled, piping hot, delivered till 2:00 AM.
             </motion.p>
 
-            {/* Key Micro-Badges */}
+            {/* Key Micro-Badges / Trust Signals */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-6 flex flex-wrap items-center gap-3 text-xs sm:text-sm font-semibold text-brand-cream/80"
+              className="mt-6 w-full max-w-xl grid grid-cols-2 sm:flex sm:flex-wrap items-stretch sm:items-center gap-2 sm:gap-3"
             >
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-brand-card border border-white/10">
-                <span className="text-brand-amber font-black">★ 5.0</span>
-                <span>Kasur Foodies</span>
+              <div className="flex items-center justify-center sm:justify-start gap-2 px-3.5 py-2.5 rounded-xl bg-brand-card/90 border border-brand-amber/30 text-brand-cream/90 shadow-sm">
+                <span className="text-brand-amber font-black text-xs sm:text-sm">★ 5.0</span>
+                <span className="text-xs font-bold tracking-tight">Kasur Foodies</span>
               </div>
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-brand-card border border-white/10">
-                <span className="w-2 h-2 rounded-full bg-brand-green" />
-                <span>100% Fresh Halal Chicken</span>
+
+              <div className="flex items-center justify-center sm:justify-start gap-2 px-3.5 py-2.5 rounded-xl bg-brand-card/90 border border-brand-green/30 text-brand-cream/90 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-brand-green shrink-0 animate-pulse" />
+                <span className="text-xs font-bold tracking-tight">100% Halal Chicken</span>
               </div>
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-brand-card border border-white/10">
-                <span>⚡ Fast 30-min Delivery</span>
+
+              <div className="col-span-2 sm:col-span-1 flex items-center justify-center sm:justify-start gap-2 px-3.5 py-2.5 rounded-xl bg-brand-card/90 border border-white/10 text-brand-cream/90 shadow-sm">
+                <span className="text-brand-amber text-xs font-black">⚡</span>
+                <span className="text-xs font-bold tracking-tight">Fast 30-min Delivery</span>
               </div>
             </motion.div>
 
