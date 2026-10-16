@@ -52,15 +52,15 @@ export const Navbar: React.FC = () => {
             : "pt-[max(1rem,env(safe-area-inset-top,0px))] pb-3.5 bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-2 w-full">
             {/* Brand Logo & Title */}
             <Link
               href="/"
-              className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none shrink-0"
+              className="flex items-center gap-2 sm:gap-3 group focus:outline-none min-w-0 flex-1 sm:flex-initial"
               aria-label="S.G Food Point Homepage"
             >
-              <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden border border-brand-amber/40 shadow-glow-amber/20 group-hover:scale-105 transition-transform shrink-0">
+              <div className="relative h-9 w-9 sm:h-11 sm:w-11 rounded-full overflow-hidden border border-brand-amber/40 shadow-glow-amber/20 group-hover:scale-105 transition-transform shrink-0">
                 <Image
                   src="/images/logo.svg"
                   alt="S.G Food Point Logo"
@@ -69,15 +69,13 @@ export const Navbar: React.FC = () => {
                   priority
                 />
               </div>
-              <div className="flex flex-col justify-center">
-                <span className="font-display font-black text-base sm:text-xl tracking-tight text-brand-cream leading-tight group-hover:text-brand-amber transition-colors whitespace-nowrap">
+              <div className="flex flex-col justify-center min-w-0">
+                <span className="font-display font-black text-sm sm:text-lg tracking-tight text-brand-cream leading-tight group-hover:text-brand-amber transition-colors truncate">
                   S.G FOOD POINT
                 </span>
-                <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] font-semibold text-brand-cream/60 tracking-wider whitespace-nowrap mt-0.5">
+                <div className="flex items-center gap-1.5 text-[9px] sm:text-[11px] font-semibold text-brand-cream/60 tracking-wider truncate mt-0.5">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse shrink-0" />
-                  <span>{storeStatus.statusText}</span>
-                  <span className="text-brand-cream/40">&bull;</span>
-                  <span>{storeStatus.subText}</span>
+                  <span className="truncate">{storeStatus.statusText} &bull; {storeStatus.subText}</span>
                 </div>
               </div>
             </Link>
@@ -122,15 +120,15 @@ export const Navbar: React.FC = () => {
             </div>
 
             {/* Mobile Header Actions (Cart + Menu Toggle) */}
-            <div className="flex sm:hidden items-center gap-2 shrink-0">
+            <div className="flex sm:hidden items-center gap-1.5 shrink-0 ml-auto">
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="relative p-2.5 rounded-full bg-brand-card border border-white/10 text-brand-cream min-h-[48px] min-w-[48px] flex items-center justify-center active:scale-90 transition-transform"
+                className="relative p-2 rounded-xl bg-brand-card border border-white/15 text-brand-cream hover:text-brand-amber active:scale-90 transition-all flex items-center justify-center min-h-[42px] min-w-[42px] shrink-0 shadow-md"
                 aria-label="Open Cart"
               >
                 <ShoppingBag className="w-5 h-5 text-brand-amber" />
                 {totalItemsCount > 0 && (
-                  <span className="absolute -top-1 -right-1 flex items-center justify-center h-5 min-w-[20px] px-1 rounded-full bg-brand-red text-white font-bold text-[10px] animate-bounce">
+                  <span className="absolute -top-1 -right-1 flex items-center justify-center h-4 min-w-[18px] px-1 rounded-full bg-brand-red text-white font-bold text-[9px] animate-bounce shadow-sm">
                     {totalItemsCount}
                   </span>
                 )}
@@ -138,7 +136,7 @@ export const Navbar: React.FC = () => {
 
               <button
                 onClick={() => setMobileMenuOpen(true)}
-                className="p-2.5 rounded-full bg-white/5 border border-white/10 text-brand-cream min-h-[48px] min-w-[48px] flex items-center justify-center active:scale-90 transition-transform"
+                className="relative p-2 rounded-xl bg-brand-card border border-white/15 text-brand-cream hover:text-brand-amber hover:border-brand-amber/40 active:scale-90 transition-all flex items-center justify-center min-h-[42px] min-w-[42px] shrink-0 shadow-md"
                 aria-label="Open Navigation Menu"
               >
                 <MenuIcon className="w-5 h-5" />
