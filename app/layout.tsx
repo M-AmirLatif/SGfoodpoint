@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
-import { CustomCursor } from "@/components/CustomCursor";
 
 export const viewport: Viewport = {
   themeColor: "#0A0A0A",
@@ -124,7 +123,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased bg-brand-bg text-brand-cream min-h-screen selection:bg-brand-red selection:text-white">
         <CartProvider>
-          <CustomCursor />
           {children}
         </CartProvider>
       </body>

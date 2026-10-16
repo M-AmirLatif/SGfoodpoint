@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Preloader } from "@/components/Preloader";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
@@ -22,14 +21,10 @@ import { MenuItem } from "@/data/menu";
 import { ItemModal } from "@/components/ItemModal";
 
 export default function HomePage() {
-  const [isPreloaderFinished, setIsPreloaderFinished] = useState(false);
   const [selectedItemForModal, setSelectedItemForModal] = useState<MenuItem | null>(null);
 
   return (
     <SmoothScroll>
-      {/* Branded Preloader */}
-      <Preloader onComplete={() => setIsPreloaderFinished(true)} />
-
       <div className="relative min-h-screen bg-brand-bg text-brand-cream overflow-x-hidden selection:bg-brand-red selection:text-white">
         {/* Navigation Bar */}
         <Navbar />
