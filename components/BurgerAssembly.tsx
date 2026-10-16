@@ -26,18 +26,18 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-amber-400",
       bgGlow: "rgba(251, 191, 36, 0.2)",
       renderElement: () => (
-        <div className="relative w-64 sm:w-80 h-28 bg-gradient-to-b from-[#e69138] to-[#b45f06] rounded-t-[100px] border-2 border-[#783f04] shadow-2xl flex items-center justify-center overflow-hidden">
+        <div className="relative w-56 sm:w-80 h-24 sm:h-28 bg-gradient-to-b from-[#e69138] to-[#b45f06] rounded-t-[100px] border-2 border-[#783f04] shadow-2xl flex items-center justify-center overflow-hidden">
           {/* Sesame seeds dots */}
           <div className="absolute inset-0 flex flex-wrap gap-4 p-4 justify-around opacity-90">
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full rotate-12" />
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full -rotate-45" />
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full rotate-6" />
-            <span className="w-2.5 h-1.5 bg-brand-cream rounded-full 45" />
+            <span className="w-2.5 h-1.5 bg-brand-cream rounded-full rotate-45" />
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full -rotate-12" />
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full rotate-30" />
             <span className="w-2.5 h-1.5 bg-brand-cream rounded-full -rotate-25" />
           </div>
-          <span className="relative z-10 text-[11px] font-black uppercase tracking-widest text-amber-950/80 bg-amber-300/40 px-3 py-1 rounded-full">
+          <span className="relative z-10 text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-amber-950/80 bg-amber-300/40 px-3 py-1 rounded-full">
             Brioche Crown
           </span>
         </div>
@@ -51,8 +51,8 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-red-400",
       bgGlow: "rgba(239, 68, 68, 0.25)",
       renderElement: () => (
-        <div className="relative w-60 sm:w-72 h-14 bg-gradient-to-r from-red-600 via-yellow-400 to-red-500 rounded-full border border-red-300 shadow-glow-red flex items-center justify-center animate-pulse">
-          <span className="text-[11px] font-black uppercase tracking-widest text-white drop-shadow">
+        <div className="relative w-52 sm:w-72 h-12 sm:h-14 bg-gradient-to-r from-red-600 via-yellow-400 to-red-500 rounded-full border border-red-300 shadow-glow-red flex items-center justify-center animate-pulse">
+          <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-white drop-shadow">
             Secret Kasuri Drizzle
           </span>
         </div>
@@ -66,9 +66,9 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-amber-500",
       bgGlow: "rgba(217, 119, 6, 0.25)",
       renderElement: () => (
-        <div className="relative w-64 sm:w-80 h-20 bg-gradient-to-r from-[#93441a] via-[#b45f06] to-[#783f04] rounded-2xl border-2 border-[#542a0a] shadow-2xl flex items-center justify-center">
+        <div className="relative w-56 sm:w-80 h-16 sm:h-20 bg-gradient-to-r from-[#93441a] via-[#b45f06] to-[#783f04] rounded-2xl border-2 border-[#542a0a] shadow-2xl flex items-center justify-center">
           <div className="absolute inset-0 bg-[radial-gradient(#3d1e07_2px,transparent_2px)] [background-size:10px_10px] opacity-40" />
-          <span className="relative z-10 text-[11px] font-black uppercase tracking-widest text-brand-cream bg-black/40 px-3 py-1 rounded-full border border-amber-500/30">
+          <span className="relative z-10 text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-brand-cream bg-black/40 px-3 py-1 rounded-full border border-amber-500/30">
             Sizzling Zinger Fillet
           </span>
         </div>
@@ -82,8 +82,8 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-yellow-400",
       bgGlow: "rgba(250, 204, 21, 0.25)",
       renderElement: () => (
-        <div className="relative w-60 sm:w-76 h-12 bg-gradient-to-r from-[#f59e0b] via-[#fbbf24] to-[#d97706] rounded-xl shadow-glow-amber flex items-center justify-center rotate-1">
-          <span className="text-[11px] font-black uppercase tracking-widest text-amber-950 font-bold">
+        <div className="relative w-52 sm:w-72 h-10 sm:h-12 bg-gradient-to-r from-[#f59e0b] via-[#fbbf24] to-[#d97706] rounded-xl shadow-glow-amber flex items-center justify-center rotate-1">
+          <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-amber-950 font-bold">
             Melted Cheddar Slice
           </span>
         </div>
@@ -97,8 +97,8 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-green-400",
       bgGlow: "rgba(34, 197, 94, 0.2)",
       renderElement: () => (
-        <div className="relative w-64 sm:w-80 h-12 bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 rounded-full border border-green-400 flex items-center justify-center shadow-lg -rotate-1">
-          <span className="text-[11px] font-black uppercase tracking-widest text-white drop-shadow">
+        <div className="relative w-56 sm:w-80 h-10 sm:h-12 bg-gradient-to-r from-green-600 via-emerald-500 to-green-700 rounded-full border border-green-400 flex items-center justify-center shadow-lg -rotate-1">
+          <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-white drop-shadow">
             Farm Crisp Greens
           </span>
         </div>
@@ -112,8 +112,8 @@ export const BurgerAssembly: React.FC = () => {
       color: "text-amber-400",
       bgGlow: "rgba(251, 191, 36, 0.2)",
       renderElement: () => (
-        <div className="relative w-64 sm:w-80 h-16 bg-gradient-to-t from-[#93441a] to-[#d97706] rounded-b-[40px] border-2 border-[#783f04] shadow-2xl flex items-center justify-center">
-          <span className="text-[11px] font-black uppercase tracking-widest text-amber-950 font-bold bg-amber-300/40 px-3 py-1 rounded-full">
+        <div className="relative w-56 sm:w-80 h-14 sm:h-16 bg-gradient-to-t from-[#93441a] to-[#d97706] rounded-b-[40px] border-2 border-[#783f04] shadow-2xl flex items-center justify-center">
+          <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-widest text-amber-950 font-bold bg-amber-300/40 px-3 py-1 rounded-full">
             Brioche Base
           </span>
         </div>
@@ -194,7 +194,7 @@ export const BurgerAssembly: React.FC = () => {
           </div>
 
           {/* Right Column: Exploded Stack Interactive Canvas */}
-          <div className="lg:col-span-6 flex flex-col items-center justify-center min-h-[460px] p-6 rounded-3xl bg-black/40 border border-white/10 relative">
+          <div className="lg:col-span-6 flex flex-col items-center justify-center min-h-[420px] sm:min-h-[460px] p-4 sm:p-6 rounded-3xl bg-black/40 border border-white/10 relative overflow-hidden">
             
             <div className="text-xs uppercase font-bold tracking-widest text-brand-cream/40 mb-6 flex items-center gap-2">
               <Flame className="w-4 h-4 text-brand-red animate-pulse" />
